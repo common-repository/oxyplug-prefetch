@@ -1,0 +1,223 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: OxyPlug - Prefetch & Prerender\n"
+"POT-Creation-Date: 2024-04-25 10:04+0400\n"
+"PO-Revision-Date: 2024-04-25 10:03+0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: oxy-prefetch.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: oxy-prefetch.php:145
+msgid "Oxyplug Prefetch & Prerender | Settings"
+msgstr ""
+
+#: oxy-prefetch.php:149 oxy-prefetch.php:1078
+msgid "Prefetch"
+msgstr ""
+
+#: oxy-prefetch.php:151 oxy-prefetch.php:1080
+msgid "Prefetches only the document of the next page."
+msgstr ""
+
+#: oxy-prefetch.php:153 oxy-prefetch.php:196 oxy-prefetch.php:243
+#: oxy-prefetch.php:1024 oxy-prefetch.php:1082
+msgid "Learn More"
+msgstr ""
+
+#: oxy-prefetch.php:162
+msgid "Number of prefetches (immediate)"
+msgstr ""
+
+#: oxy-prefetch.php:164
+msgid "The number of links to be prefetched on a category page"
+msgstr ""
+
+#: oxy-prefetch.php:184
+msgid "Prefetch links on mouse hover (moderate)"
+msgstr ""
+
+#: oxy-prefetch.php:192 oxy-prefetch.php:1020
+msgid "Prerender"
+msgstr ""
+
+#: oxy-prefetch.php:194 oxy-prefetch.php:241 oxy-prefetch.php:1022
+msgid "Prerenders the next page completely like an invisible tab."
+msgstr ""
+
+#: oxy-prefetch.php:205
+msgid "Number of prerenders (immediate)"
+msgstr ""
+
+#: oxy-prefetch.php:207
+msgid "The number of links to be prerendered on a category page"
+msgstr ""
+
+#: oxy-prefetch.php:227
+msgid "Prerender links on mouse hover (moderate)"
+msgstr ""
+
+#: oxy-prefetch.php:238
+msgid "Exclusion"
+msgstr ""
+
+#: oxy-prefetch.php:239
+msgid "(Only for moderate)"
+msgstr ""
+
+#: oxy-prefetch.php:252
+msgid "href exclusion (RegEx allowed)"
+msgstr ""
+
+#: oxy-prefetch.php:282 oxy-prefetch.php:324 oxy-prefetch.php:1073
+#: oxy-prefetch.php:1131
+msgid "Add More"
+msgstr ""
+
+#: oxy-prefetch.php:296
+msgid "Selector exclusion"
+msgstr ""
+
+#: oxy-prefetch.php:330
+msgid Exclude links within a section by entering id, class name or any other selectors."
+msgstr ""
+
+#: oxy-prefetch.php:331
+msgid "Example: .no-prerender"
+msgstr ""
+
+#: oxy-prefetch.php:337
+msgid "Save"
+msgstr ""
+
+#: oxy-prefetch.php:654 oxy-prefetch.php:774
+msgid "Saved."
+msgstr ""
+
+#: oxy-prefetch.php:657 oxy-prefetch.php:779
+msgid "Wrong Nonce! Refresh the page."
+msgstr ""
+
+#: oxy-prefetch.php:663 oxy-prefetch.php:785 oxy-prefetch.php:797
+msgid "Error!"
+msgstr ""
+
+#: oxy-prefetch.php:683
+#, php-format
+msgid "Max number of prefetches is %d."
+msgstr ""
+
+#: oxy-prefetch.php:689
+#, php-format
+msgid "Min number of prefetches is %d."
+msgstr ""
+
+#: oxy-prefetch.php:708
+#, php-format
+msgid "Max number of prerenders is %d."
+msgstr ""
+
+#: oxy-prefetch.php:714
+#, php-format
+msgid "Min number of prerenders is %d."
+msgstr ""
+
+#: oxy-prefetch.php:880
+msgid "Oops..something went wrong:"
+msgstr ""
+
+#: oxy-prefetch.php:893
+msgid "The prefetch url is invalid."
+msgstr ""
+
+#: oxy-prefetch.php:902
+msgid "The prefetch url must be in your host."
+msgstr ""
+
+#: oxy-prefetch.php:944
+msgid "The prerender url is invalid."
+msgstr ""
+
+#: oxy-prefetch.php:953
+msgid "The prerender url must be in your host."
+msgstr ""
+
+#: oxy-prefetch.php:984
+msgid "Successfully updated."
+msgstr ""
+
+#: oxy-prefetch.php:995
+msgid "Oxyplug Prefetch & Prerender"
+msgstr ""
+
+#: oxy-prefetch.php:1014
+msgid "ON"
+msgstr ""
+
+#: oxy-prefetch.php:1015
+msgid "OFF"
+msgstr ""
+
+#: oxy-prefetch.php:1037
+msgid "Prerender the link(s) below on:"
+msgstr ""
+
+#: oxy-prefetch.php:1046 oxy-prefetch.php:1061 oxy-prefetch.php:1104
+#: oxy-prefetch.php:1119
+#, php-format
+msgid "e.g. %s"
+msgstr ""
+
+#: oxy-prefetch.php:1095
+msgid "Prefetch the link(s) below on:"
+msgstr ""
+
+#: oxy-prefetch.php:1175
+#, php-format
+msgid "You have not enabled prerender in Oxyplug Prefetch & Prerender %s."
+msgstr ""
+
+#: oxy-prefetch.php:1175
+msgid "settings"
+msgstr ""
+
+#: oxy-prefetch.php:1180
+msgid "Do not show this message again"
+msgstr ""
+
+#: oxy-prefetch.php:1229
+msgid "Settings"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "OxyPlug - Prefetch & Prerender"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.oxyplug.com/plugins/oxy-prefetch"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Faster loading next pages by prerendering/prefetching all links a user hovers or addresses you prefer. It improves UX and Core Web Vitals score."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "OxyPlug"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.oxyplug.com"
+msgstr ""

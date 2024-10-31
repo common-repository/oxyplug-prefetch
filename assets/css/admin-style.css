@@ -1,0 +1,394 @@
+:root {
+  --oxy-color-primary: #2271b1;
+  --oxy-color-primary-hover: #135e96;
+
+  --oxy-color-white: #fff;
+
+  --oxy-color-black-01: #0001;
+
+  --oxy-color-success: #139641;
+  --oxy-color-success-hover: #128239;
+
+  --oxy-color-danger: #a10000;
+  --oxy-bg-danger: #f6f3f3;
+  --oxy-bg-danger-outline: #f1f1f1;
+  --oxy-color-danger-outline-active: #9b0000;
+
+  --oxy-prefetch-color-gray-darker: #757575;
+  --oxy-prefetch-color-gray-dark: #aaaaaa;
+  --oxy-prefetch-color-gray-light: #dddddd;
+  --oxy-prefetch-color-gray-lighter: #f6f7f7;
+}
+
+/* General Starts Here */
+.oxy-prefetch-validity:invalid,
+.oxy-prefetch-invalid {
+  border: 2px solid var(--oxy-color-danger) !important;
+}
+
+small.oxy-prefetch-smaller {
+  font-size: 0.5em;
+}
+
+.oxy-prefetch-has-tooltip {
+  position: relative;
+}
+
+.oxy-prefetch-tooltip {
+  position: absolute;
+  color: var(--oxy-color-white);
+  background: var(--oxy-color-primary);
+  border-radius: 5px;
+  padding: 10px;
+  top: 20px;
+  left: calc(-170px / 2);
+  z-index: 1;
+  min-width: 150px;
+  max-width: 300px;
+  line-height: 1.3;
+  font-size: 0.8em;
+}
+
+.oxy-prefetch-tooltip a {
+  color: var(--oxy-color-white);
+}
+
+.oxy-prefetch-hr {
+  margin: 20px 0;
+}
+
+.oxy-add-button {
+  background: none;
+  outline: none;
+  border: none;
+  vertical-align: text-bottom;
+  font-size: 28px;
+  line-height: 0;
+  color: var(--oxy-color-primary);
+  cursor: pointer;
+}
+
+.oxy-add-button:hover {
+  color: var(--oxy-color-primary-hover);
+}
+
+.oxy-d-inline-block {
+  display: inline-block;
+}
+
+.oxy-d-block {
+  display: block;
+}
+
+/* General Ends Here */
+
+/* Buttons Starts Here */
+.oxy-prefetch-button-danger-outline {
+  color: var(--oxy-color-danger) !important;
+  border-color: var(--oxy-color-danger) !important;
+  background: var(--oxy-bg-danger) !important;
+}
+.oxy-prefetch-button-danger-outline:hover {
+  background: var(--oxy-bg-danger-outline) !important;
+}
+.oxy-prefetch-button-danger-outline[disabled],
+.oxy-prefetch-button-danger-outline[disabled]:hover {
+  color: var(--oxy-prefetch-color-gray-dark) !important;
+  background: var(--oxy-prefetch-color-gray-lighter) !important;
+  border-color: var(--oxy-prefetch-color-gray-light) !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  cursor: default;
+}
+.oxy-prefetch-button-danger-outline:focus,
+.oxy-prefetch-button-danger-outline.focus {
+  box-shadow: 0 0 0 1px var(--oxy-color-white), 0 0 0 3px var(--oxy-bg-danger) !important;
+}
+.oxy-prefetch-button-danger-outline:active,
+.oxy-prefetch-button-danger-outline.active {
+  background: var(--oxy-color-danger-outline-active) !important;
+  border-color: var(--oxy-color-danger-outline-active) !important;
+  box-shadow: none !important;
+  color: var(--oxy-color-white) !important;
+}
+
+#oxy_prefetch_metabox .oxy-delete-parent .dashicons-trash {
+  width: 0;
+  vertical-align: sub;
+  margin-left: -3px;
+  margin-right: 14px;
+  font-size: 18px;
+}
+
+html[dir="rtl"] #oxy_prefetch_metabox .oxy-delete-parent .dashicons-trash {
+  margin-right: -3px;
+  margin-left: 14px;
+}
+
+#oxy_prefetch_metabox .oxy-add-more-static-urls {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+#oxy_prefetch_metabox .oxy-add-more-static-urls .dashicons-plus {
+  width: 0;
+  vertical-align: middle;
+  margin-left: -6px;
+  margin-right: 18px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+html[dir="rtl"] #oxy_prefetch_metabox .oxy-add-more-static-urls .dashicons-plus {
+  vertical-align: text-top;
+  margin-left: 18px;
+  margin-right: -6px;
+}
+
+/* Buttons Ends Here */
+
+/* Menu Starts Here */
+#adminmenu #toplevel_page_oxy-prefetch-settings .wp-menu-image img {
+  padding: 2px 0 0 0;
+}
+
+h1.oxy-prefetch-head-title {
+  background: var(--oxy-prefetch-color-gray-light);
+  border-left: 5px solid var(--oxy-prefetch-color-gray-dark);
+  padding: 10px 15px 15px 15px;
+  margin-bottom: 15px;
+  width: calc(100% - 45px);
+  font-weight: normal;
+}
+
+html[dir="rtl"] h1.oxy-prefetch-head-title {
+  border-left: unset;
+  border-right: 5px solid var(--oxy-prefetch-color-gray-dark);
+}
+
+.oxy-prefetch-each-section {
+  background: var(--oxy-color-white);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px var(--oxy-prefetch-color-gray-light);
+  width: calc(100% - 40px);
+}
+
+.oxy-prefetch-each-section > div:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.oxy-prefetch-each-section h2 {
+  font-size: 1.6em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.oxy-prefetch-each-section .dashicons-editor-help {
+  color: var(--oxy-color-primary);
+  font-size: 0.9em;
+  vertical-align: middle;
+}
+
+.oxy-prefetch-each-section .dashicons-editor-help .oxy-prefetch-tooltip {
+  font-size: 0.7em;
+  padding: 5px 5px 10px 5px;
+  z-index: 10000;
+}
+
+.oxy-prefetch-each-section h3 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.oxy-prefetch-each-section .each-part .has-subtext {
+  margin-bottom: 10px;
+}
+
+.oxy-prefetch-each-section .each-part .has-subtext span {
+  color: var(--oxy-prefetch-color-gray-darker);
+  margin-left: 24px;
+  font-size: 0.9em;
+}
+
+/* Menu Ends Here */
+
+/* Metabox Starts Here */
+#oxy_prefetch_metabox > .inside {
+  padding: 10px;
+  margin: 0;
+  background: var(--oxy-prefetch-color-gray-light);
+}
+
+@media (min-width: 1501px) {
+  #oxy_prefetch_metabox > .inside {
+    padding: 30px 70px;
+  }
+}
+
+#oxy_prefetch_metabox > .inside .oxy-prefetch-statics-wrap {
+  padding: 10px;
+  background: var(--oxy-color-white);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 3px var(--oxy-color-black-01);
+}
+
+#oxy_prefetch_metabox > .inside .oxy-prefetch-statics-wrap .dashicons-editor-help {
+  font-size: 1.4em;
+  line-height: 1.5;
+  color: var(--oxy-color-primary);
+  border-right: 3px solid var(--oxy-color-success);
+  padding: 0 8px 0 3px;
+  margin-right: 10px;
+}
+
+#oxy_prefetch_metabox > .inside .oxy-prefetch-statics-wrap .dashicons-editor-help .oxy-prefetch-tooltip {
+  padding: 5px 10px 10px 10px;
+}
+
+#oxy_prefetch_metabox > .inside .oxy-prefetch-statics-wrap > strong {
+  margin-bottom: 15px;
+  display: inline-block;
+  font-size: 1.5em;
+  vertical-align: top;
+}
+
+#oxy_prefetch_metabox > .inside .oxy-prefetch-statics-wrap > h2 {
+  padding: 0;
+}
+
+#oxy_prefetch_metabox > .inside .oxy-prefetch-statics-wrap > .oxy-prefetch-switcher {
+  display: inline-block;
+}
+
+#oxy_prefetch_metabox > .inside .oxy-prefetch-statics-wrap:first-of-type {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 1501px) {
+  #oxy_prefetch_metabox > .inside .oxy-prefetch-statics-wrap {
+    padding: 15px 70px 15px;
+  }
+}
+
+#oxy_prefetch_metabox > .inside h3 {
+  padding: 0;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+#oxy_prefetch_metabox > .inside input[type="text"] {
+  width: calc(100% - 48px);
+  margin-bottom: 5px;
+  text-align: left;
+  direction: ltr;
+}
+
+@media (min-width: 783px) {
+  #oxy_prefetch_metabox > .inside input[type="text"] {
+    width: calc(100% - 40px);
+  }
+}
+
+/* Metabox Ends Here */
+
+/*** Switch Start ***/
+#oxy_prefetch_metabox .switch {
+  position: relative;
+  display: inline-block;
+  width: 47px;
+  height: 26px;
+}
+
+#oxy_prefetch_metabox .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#oxy_prefetch_metabox .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--oxy-prefetch-color-gray-light);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#oxy_prefetch_metabox .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: var(--oxy-color-white);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#oxy_prefetch_metabox input:checked + .slider {
+  background-color: var(--oxy-color-primary, #00669b);
+}
+
+#oxy_prefetch_metabox input:focus + .slider {
+  box-shadow: 0 0 1px var(--oxy-color-primary);
+}
+
+#oxy_prefetch_metabox input:checked + .slider:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+}
+
+#oxy_prefetch_metabox .slider.round {
+  border-radius: 34px;
+}
+
+#oxy_prefetch_metabox .slider.round:before {
+  border-radius: 50%;
+}
+
+#oxy_prefetch_metabox .oxy-prefetch-switcher > span,
+#oxy_prefetch_metabox .oxy-prefetch-switcher > label {
+  display: inline-block !important;
+}
+
+/*** Switch End ***/
+
+/*** Settings Start ***/
+#oxy-prefetch-prerender-href-exclusion-warp input,
+#oxy-prefetch-prerender-selector-exclusion-warp input {
+  margin-bottom: 5px;
+  width: 400px;
+}
+
+#oxy-prefetch-selector-exclusion-explanation {
+  background: var(--oxy-prefetch-color-gray-light);
+  border-left: 5px solid var(--oxy-prefetch-color-gray-dark);
+  padding: 5px 10px;
+  line-height: 1.8;
+}
+
+.oxy-prefetch-add-exclusion {
+  line-height: 1.3 !important;
+  padding: 5px 10px 3px 5px !important;
+  margin: 0 0 5px 0 !important;
+}
+
+#oxy-prefetch-prerender-href-exclusion-warp .oxy-prefetch-remove-exclusion,
+#oxy-prefetch-prerender-selector-exclusion-warp .oxy-prefetch-remove-exclusion {
+  line-height: 1.3;
+  padding: 3px 5px 3px 6px;
+}
+/*** Settings End ***/
+
+/*** Notice Start ***/
+.oxy-prefetch-notice {
+  margin-left: 0 !important;
+}
+/*** Notice End ***/
